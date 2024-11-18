@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--MARGIN AND PADDING DIMENSIONS-->
+    <dimen name="distance2">2dp</dimen>
+    <dimen name="distance4">4dp</dimen>
+    <dimen name="distance8">8dp</dimen>
+    <dimen name="distance12">12dp</dimen>
+    <dimen name="distance16">16dp</dimen>
+    <dimen name="distance24">24dp</dimen>
+    <dimen name="distance32">32dp</dimen>
+    <dimen name="distance64">64dp</dimen>
+
+    <!--TEXT DIMENSIONS-->
+    <dimen name="text14">14sp</dimen>
+    <dimen name="text16">16sp</dimen>
+    <dimen name="text24">24sp</dimen>
+    <dimen name="text36">36sp</dimen>
+
+    <!--OTHER DIMENSIONS-->
+    <dimen name="edittext_height">40dp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="corner_radius">10dp</dimen>
+
+
+</resources>

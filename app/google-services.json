@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493795364564",
+    "project_id": "ourbirds-128d7",
+    "storage_bucket": "ourbirds-128d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493795364564:android:9647913cba42ba0dacf541",
+        "android_client_info": {
+          "package_name": "com.szigladam.ourbirds"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "${FIREBASE_API_KEY}"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
