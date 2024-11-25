@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/light_blue"
+    tools:context=".activity.UploadActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_gravity="center_vertical"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="20dp"
+        android:overScrollMode="always">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:background="@drawable/custom_border">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/new_watch"
+                    android:textAppearance="@style/HeaderTextStyle"
+                    tools:ignore="TextContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/iv_upload_backArrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/light_blue"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            </RelativeLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/fl_fragment_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custom_border"/>
+
+                    <com.szigladam.ourbirds.widget.SpeciesDropdownListView
+                        android:id="@+id/sdlv_species"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_height"
+                        android:layout_marginTop="@dimen/distance32"/>
+
+                    <com.szigladam.ourbirds.widget.HabitatDropdownListView
+                        android:id="@+id/hdlv_habitat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/et_comment"
+                        android:layout_width="match_parent"
+                        android:minHeight="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/distance32"
+                        android:background="@drawable/custom_border"
+                        android:hint="@string/oither_comments"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/distance16"
+                        android:textColor="@color/grey_text"
+                        android:textColorHint="@color/light_blue"
+                        android:textSize="@dimen/text14"
+                        android:lineBreakStyle="normal"
+                        tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,UnusedAttribute,VisualLintTextFieldSize"/>
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_marginTop="@dimen/distance24"
+                        android:backgroundTint="@color/light_orange"
+                        android:text="@string/save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/text16"
+                        app:cornerRadius="@dimen/corner_radius"
+                        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintButtonSize" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_selectHabitat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:hint="Válassz élőhelytípust!"
+        android:textColorHint="@color/light_blue"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/distance32"
+        android:paddingStart="@dimen/distance16"
+        android:paddingEnd="@dimen/distance16"
+        android:textColor="@color/grey_text"
+        android:drawableEnd="@drawable/ic_baseline_down_24"
+        android:background="@drawable/custom_border"/>
+
+</merge>

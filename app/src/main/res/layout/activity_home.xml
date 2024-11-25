@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".activity.HomeActivity"
+    tools:ignore="VisualLintLongText">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_stat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/grey_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/iv_main_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:elevation="10dp"
+                            android:src="@drawable/p_logo"
+                            android:layout_margin="16dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tv_main_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/distance16"
+                            android:text="@string/app_name"
+                            android:textAppearance="@style/HeaderLogoTextStyle"
+                            tools:ignore="ObsoleteLayoutParam,TextContrastCheck" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="40dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        tools:ignore="ScrollViewSize">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.szigladam.ourbirds.widget.InfoTextView
+                                android:id="@+id/itv_info"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintWidth_percent="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/cuv_main"
+                                app:layout_constraintTop_toTopOf="parent"/>
+
+                            <com.szigladam.ourbirds.widget.CurrentUserView
+                                android:id="@+id/cuv_main"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintWidth_percent="0.5"
+                                app:layout_constraintStart_toEndOf="@id/itv_info"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <com.szigladam.ourbirds.widget.LastBirdWatchView
+                            android:id="@+id/lbwv_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.szigladam.ourbirds.widget.BottomNavigationBarView
+        android:id="@+id/bnbv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="22dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

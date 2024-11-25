@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@drawable/custom_border"
+    android:backgroundTint="@color/white"
+    tools:ignore="VisualLintBounds">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/write_and_pick_species"
+        android:textColor="@color/light_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/et_searchSpecies"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/custom_border"
+        android:gravity="center_vertical"
+        android:hint="@string/search_species"
+        android:inputType="text"
+        android:paddingStart="@dimen/distance16"
+        android:paddingEnd="@dimen/distance16"
+        android:singleLine="true"
+        android:textColor="@color/grey_text"
+        android:textColorHint="@color/light_blue"
+        android:textSize="@dimen/text14"
+        tools:ignore="Autofill,TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <ListView
+        android:id="@+id/lv_species"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

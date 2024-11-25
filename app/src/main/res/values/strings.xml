@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">OurBirds</string>
+    <string name="register">Regisztráció</string>
+    <string name="name">Név</string>
+    <string name="username">Felhasználónév</string>
+    <string name="email">Email</string>
+    <string name="password">Jelszó</string>
+    <string name="register_button">Regisztráció</string>
+    <string name="login_redirect">Már regisztráltál? Belépés</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="login_button">Bejelentkezés</string>
+    <string name="register_redirect_text">Még nem regisztráltál? Regisztráció</string>
+    <string name="info">Az Ourbirds egy madár megfigyelő app. Rögzítheted madár megfigyeléseidet és böngészhetsz a saját és más felhasználók megfigyelési adataiban.</string>
+    <string name="stats">Statisztikák</string>
+    <string name="sum_watch">Összes megfigyelés</string>
+    <string name="pick_species">Válassz madárfajt!</string>
+    <string name="order_mode">----- Válaszd ki mi alapján legyen rendezve -----</string>
+    <string name="reg_users">Regisztrált felhasználók</string>
+    <string name="most_frequent_species">Leggyakoribb madárfaj</string>
+    <string name="sum">Összesen</string>
+    <string name="most_frequent_location">Leggyakoribb település</string>
+    <string name="most_frequent_habitat">Leggyakoribb élőhely</string>
+    <string name="most_active_user">Legaktívabb megfigyelő</string>
+    <string name="write_and_pick_species">Írj a keresőmezőbe majd válaszd ki a fajt!</string>
+    <string name="search_species">Keresés...</string>
+    <string name="loading">Betöltés...</string>
+    <string name="species">Madárfaj</string>
+    <string name="watch_user">Megfigyelő</string>
+    <string name="watch_date">Időpont</string>
+    <string name="location">Helység</string>
+    <string name="habitat">Élőhely</string>
+    <string name="signed_in">Belépve</string>
+    <string name="watch_count">Megfigyelések száma</string>
+    <string name="last_watch">Utolsó megfigyelés</string>
+    <string name="home">Kezdőlap</string>
+    <string name="watch">Megfigyelés</string>
+    <string name="stat">Statisztika</string>
+    <string name="logout">Kilépés</string>
+    <string name="details_data">Részletes adatok</string>
+    <string name="watched_species">Megfigyelt madárfaj</string>
+    <string name="new_watch">Új megfigyelés</string>
+    <string name="save">Mentés</string>
+    <string name="oither_comments">Egyéb észrevételek</string>
+    <string name="watches">Megfigyelések</string>
+
+    <string-array name="sort_watch_list">
+        <item>Dátum szerint csökkenő</item>
+        <item>Dátum szerint növekvő</item>
+        <item>Madárfaj szerint</item>
+        <item>Felhasználó szerint</item>
+        <item>Település szerint</item>
+        <item>Élőhely szerint</item>
+    </string-array>
+
+</resources>

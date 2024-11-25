@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:background="@drawable/custom_border"
+        android:drawableEnd="@drawable/ic_baseline_down_24"
+        android:gravity="center_vertical"
+        android:hint="@string/pick_species"
+        android:paddingStart="@dimen/distance16"
+        android:paddingEnd="@dimen/distance16"
+        android:textColor="@color/grey_text"
+        android:textColorHint="@color/light_blue"
+        tools:ignore="UseCompatTextViewDrawableXml,TextContrastCheck" />
+
+</merge>

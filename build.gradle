@@ -1,0 +1,22 @@
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.1'
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '8.7.1' apply false
+    alias(libs.plugins.google.gms.google.services) apply false
+}
+
+// Az .env beolvasáshoz
+ext.getEnvValue = { String key ->
+    def envFile = rootProject.file(".env")
+    if (envFile.exists()) {
+        def envVars = new Properties()
+        envFile.withInputStream {
+            envVars.load(it)
+        }
+        return envVars[key]
+    }
+    return null
+}
