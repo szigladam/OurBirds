@@ -18,8 +18,7 @@ android {
 
         //.env API_KEY
         manifestPlaceholders = [
-                MAPS_API_KEY: rootProject.ext.getEnvValue("MAPS_API_KEY") ?: "",
-                FIREBASE_API_KEY: rootProject.ext.getEnvValue("FIREBASE_API_KEY") ?: ""
+                MAPS_API_KEY: rootProject.ext.getEnvValue("MAPS_API_KEY") ?: ""
         ]
     }
 
